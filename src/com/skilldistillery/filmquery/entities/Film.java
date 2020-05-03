@@ -6,15 +6,17 @@ import java.util.List;
 public class Film {
 	private String title;
 	private String description;
+	private String rating;
 	private int releaseYear;
 	private String language;
 	private List<Actor> actors;
-
-	public Film(String _title, String _description, int _releaseYear, String _language) {
+	
+	public Film(String _title, String _description, String _rating, int _releaseYear, String _language) {
 		title = _title;
 		description = _description;
 		releaseYear = _releaseYear;
 		language = _language;
+		rating = _rating;
 	}
 
 	public void setTitle(String _title) {
@@ -42,7 +44,7 @@ public class Film {
 	}
 
 	public String toString() {
-		return ("TITLE: " + title + " DESCRIPTION: " + description + " CAST: " + showActors() + " RELEASE YEAR: "
+		return ("TITLE: " + title + " DESCRIPTION: " + description +" RATING: " + rating + " CAST: " + showActors() + " RELEASE YEAR: "
 				+ releaseYear + " LANGUAGE: " + language);
 	}
 

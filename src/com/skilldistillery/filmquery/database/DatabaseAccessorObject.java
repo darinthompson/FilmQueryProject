@@ -55,7 +55,7 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 
 		ResultSet rs = pst.executeQuery();
 		while (rs.next()) {
-			film = new Film(rs.getNString("film.title"), rs.getString("film.description"),
+			film = new Film(rs.getNString("film.title"), rs.getString("film.description"), rs.getString("film.rating"),
 					rs.getInt("film.release_year"), rs.getString("language.name"));
 			addActorToFilm(film, user, password, filmId);
 		}
@@ -98,7 +98,7 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 		ResultSet rs = pst.executeQuery();
 
 		while (rs.next()) {
-			film = new Film(rs.getString("film.title"), rs.getString("film.description"),
+			film = new Film(rs.getString("film.title"), rs.getString("film.description"), rs.getString("film.rating"),
 					rs.getInt("film.release_year"), rs.getString("language.name"));
 			if (film != null) {
 				addActorToFilm(film, user, password, rs.getInt("film.id"));
