@@ -111,5 +111,3 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 		return films;
 	}
 }
-// SELECT film.title, language.name FROM film JOIN language ON film.language_id = language.id WHERE film.title LIKE "%GOO%";
-// 
