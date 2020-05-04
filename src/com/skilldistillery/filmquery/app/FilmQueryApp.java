@@ -63,6 +63,7 @@ public class FilmQueryApp {
 			System.out.println("SORRY, NOTHING MATCHES YOUR SEARCH.");
 		} else {
 			for (Film f : films) {
+				System.out.println("------------------------------");
 				System.out.println(f.toString());
 			}
 		}

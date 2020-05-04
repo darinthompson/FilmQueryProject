@@ -44,8 +44,8 @@ public class Film {
 	}
 
 	public String toString() {
-		return ("TITLE: " + title + " DESCRIPTION: " + description +" RATING: " + rating + " CAST: " + showActors() + " RELEASE YEAR: "
-				+ releaseYear + " LANGUAGE: " + language);
+		return ("TITLE: " + title + "\nDESCRIPTION: " + description +"\nRATING: " + rating + "\nCAST: " + showActors() + "\nRELEASE YEAR: "
+				+ releaseYear + "\nLANGUAGE: " + language);
 	}
 
 	public void addActorToCast(Actor _actor) {
